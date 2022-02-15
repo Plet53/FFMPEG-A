@@ -6,4 +6,5 @@
     <string name="main_button">Transcode</string>
     <string name="channel_name">main</string>
     <string name="channel_description">The main channel for notifications</string>
+  <string name="TBI">to be implemented</string>
 </resources>

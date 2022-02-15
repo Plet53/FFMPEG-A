@@ -1,0 +1,9 @@
+# ninja log v5
+0	287	666332348	CMakeFiles/hello.dir/hello.c.o	f8460590fd0bf5dd
+287	373	666332348	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/arm64-v8a/libhello.so	7e14b24ea93f5abc
+0	7	0	clean	5fd7d217ec38e6e9
+0	101	666334030	CMakeFiles/hello.dir/hello.c.o	f8460590fd0bf5dd
+101	422	666334030	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/arm64-v8a/libhello.so	7e14b24ea93f5abc
+0	4	0	clean	5fd7d217ec38e6e9
+1	457	666334190	CMakeFiles/hello.dir/hello.c.o	f8460590fd0bf5dd
+458	550	666334190	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/arm64-v8a/libhello.so	7e14b24ea93f5abc

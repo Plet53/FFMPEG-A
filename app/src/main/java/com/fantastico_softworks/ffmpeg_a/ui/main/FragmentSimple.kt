@@ -13,11 +13,16 @@ import com.fantastico_softworks.ffmpeg_a.databinding.FragmentSimpleBinding
 
 
 class FragmentSimple : Fragment() {
+  
+  external fun hello(): String
   val mess: String = "hey world"
   var notifid: Int = 0
   
   companion object {
     fun newInstance() = FragmentSimple()
+    init {
+      System.loadLibrary("hello")
+    }
   }
   
   private lateinit var viewModel: MainViewModel
@@ -26,34 +31,29 @@ class FragmentSimple : Fragment() {
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    return inflater.inflate(R.layout.fragment_simple, container, false)
+    val binding = FragmentSimpleBinding.inflate(inflater, container, false)
+    binding.mainButton.setOnClickListener { sendMess(binding.root) }
+    return binding.root
   }
   
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
     viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     // TODO: Use the ViewModel
-    val binding = FragmentSimpleBinding.inflate(this.layoutInflater)
-    binding.mainButton.setOnClickListener(View.OnClickListener {
-      fun onClick(view: View) {
-        sendMess()
-      }
-    } )
   }
   
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
   }
   
-  fun sendMess() {
-    val builder = NotificationCompat.Builder(this.requireContext(), "MAIN")
+  fun sendMess(view: View) {
+    val builder = NotificationCompat.Builder(view.context, "MAIN")
       .setSmallIcon(R.drawable.ic_notif_dark)
-      .setContentTitle(mess)
+      .setContentTitle(hello())
       .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-    with(NotificationManagerCompat.from(this.requireContext())) {
+    with(NotificationManagerCompat.from(view.context)) {
       notify(notifid, builder.build())
       notifid = notifid.inc()
     }
   }
-  
 }

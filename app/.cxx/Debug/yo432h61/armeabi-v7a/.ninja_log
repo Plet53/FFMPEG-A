@@ -1,0 +1,11 @@
+# ninja log v5
+1	278	666592519	CMakeFiles/hello.dir/hello.c.o	4e51b6abc94addfe
+279	352	666592519	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/armeabi-v7a/libhello.so	fa5056c80087e64b
+15	540	666647592	CMakeFiles/hello.dir/hello.c.o	4e51b6abc94addfe
+540	764	666647592	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/armeabi-v7a/libhello.so	fa5056c80087e64b
+1	309	666652036	CMakeFiles/hello.dir/hello.c.o	4e51b6abc94addfe
+309	495	666652036	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/armeabi-v7a/libhello.so	fa5056c80087e64b
+2	385	666658028	CMakeFiles/hello.dir/hello.c.o	4e51b6abc94addfe
+385	556	666658028	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/armeabi-v7a/libhello.so	fa5056c80087e64b
+2	160	666658236	CMakeFiles/hello.dir/hello.c.o	4e51b6abc94addfe
+161	246	666658236	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/armeabi-v7a/libhello.so	fa5056c80087e64b

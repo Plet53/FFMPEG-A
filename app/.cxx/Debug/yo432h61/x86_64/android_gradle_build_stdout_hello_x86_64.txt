@@ -1,0 +1,9 @@
+ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\yo432h61\x86_64'
+[1/2] Building C object CMakeFiles/hello.dir/hello.c.o
+FAILED: CMakeFiles/hello.dir/hello.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dhello_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/hello.dir/hello.c.o -MF CMakeFiles\hello.dir\hello.c.o.d -o CMakeFiles/hello.dir/hello.c.o -c D:/FFMPEG-A/app/src/main/cpp/hello.c
+D:/FFMPEG-A/app/src/main/cpp/hello.c:8:18: error: member reference base type 'JNIEnv' (aka 'const struct JNINativeInterface *') is not a structure or union
+  jstring d = env->NewGlobalRef(env, (jstring) c);
+              ~~~^ ~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
