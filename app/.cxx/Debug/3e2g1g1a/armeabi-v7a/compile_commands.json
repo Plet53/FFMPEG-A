@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/FFMPEG-A/app/.cxx/Debug/3e2g1g1a/armeabi-v7a",
+  "command": "D:\\Android_SDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeginterface_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/../../../../lib/armeabi-v7a/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles\\ffmpeginterface.dir\\ffmpeginterface.cpp.o -c D:\\FFMPEG-A\\app\\src\\main\\cpp\\ffmpeginterface.cpp",
+  "file": "D:\\FFMPEG-A\\app\\src\\main\\cpp\\ffmpeginterface.cpp"
+},
+{
+  "directory": "D:/FFMPEG-A/app/.cxx/Debug/3e2g1g1a/armeabi-v7a",
+  "command": "D:\\Android_SDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dhello_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/../../../../lib/armeabi-v7a/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles\\hello.dir\\hello.cpp.o -c D:\\FFMPEG-A\\app\\src\\main\\cpp\\hello.cpp",
+  "file": "D:\\FFMPEG-A\\app\\src\\main\\cpp\\hello.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -shared -Wl,--enable-auto-import -o msys-ffmpeginterface.dll -Wl,--out-implib,libffmpeginterface.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o  avfilter-NOTFOUND avformat-NOTFOUND postproc-NOTFOUND swresample-NOTFOUND swscale-NOTFOUND avcodec-NOTFOUND avutil-NOTFOUND 

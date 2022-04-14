@@ -1,0 +1,300 @@
+ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\yo432h61\x86'
+[1/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\h264chroma_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264chroma_init_arm.c:48:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags) && !high_bit_depth) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:14:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[2/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\g722dsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/g722dsp_init_arm.c:33:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:14:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[3/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\h264dsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264dsp_init_arm.c:118:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:14:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[4/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\fft_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c:42:9: error: use of undeclared identifier 'HAVE_VFP'
+    if (have_vfp_vm(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:36:6: note: expanded from macro 'have_vfp_vm'
+    (HAVE_VFP && ((flags) & AV_CPU_FLAG_VFP_VM))
+     ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fft_init_arm.c:49:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:209:1: note: expanded from here
+HAVE_NEON
+^
+2 errors generated.
+[5/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\h264qpel_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264qpel_init_arm.c:102:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags) && !high_bit_depth) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:50:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[6/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\flacdsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:54:32: error: static declaration of 'cbrt' follows non-static declaration
+static av_always_inline double cbrt(double x)
+                               ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:191:8: note: previous declaration is here
+double cbrt(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:61:31: error: static declaration of 'cbrtf' follows non-static declaration
+static av_always_inline float cbrtf(float x)
+                              ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:192:7: note: previous declaration is here
+float cbrtf(float __x);
+      ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:68:32: error: static declaration of 'copysign' follows non-static declaration
+static av_always_inline double copysign(double x, double y)
+                               ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:279:8: note: previous declaration is here
+double copysign(double __value, double __sign) __attribute_const__;
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:121:22: error: static declaration of 'erf' follows non-static declaration
+static inline double erf(double z)
+                     ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:211:8: note: previous declaration is here
+double erf(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:340:9: warning: 'isnan' macro redefined [-Wmacro-redefined]
+#define isnan(x)                  \
+        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:69:9: note: previous definition is here
+#define isnan(x) __builtin_isnan(x)
+        ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:359:9: warning: 'isfinite' macro redefined [-Wmacro-redefined]
+#define isfinite(x)                  \
+        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:65:9: note: previous definition is here
+#define isfinite(x) __builtin_isfinite(x)
+        ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:366:31: error: static declaration of 'hypot' follows non-static declaration
+static inline av_const double hypot(double x, double y)
+                              ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:199:8: note: previous declaration is here
+double hypot(double __x, double __y);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:423:22: error: static declaration of 'rint' follows non-static declaration
+static inline double rint(double x)
+                     ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:239:8: note: previous declaration is here
+double rint(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:430:43: error: static declaration of 'lrint' follows non-static declaration
+static av_always_inline av_const long int lrint(double x)
+                                          ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:243:6: note: previous declaration is here
+long lrint(double __x);
+     ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:437:43: error: static declaration of 'lrintf' follows non-static declaration
+static av_always_inline av_const long int lrintf(float x)
+                                          ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:244:6: note: previous declaration is here
+long lrintf(float __x);
+     ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:444:41: error: static declaration of 'round' follows non-static declaration
+static av_always_inline av_const double round(double x)
+                                        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:251:8: note: previous declaration is here
+double round(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:451:40: error: static declaration of 'roundf' follows non-static declaration
+static av_always_inline av_const float roundf(float x)
+                                       ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:252:7: note: previous declaration is here
+float roundf(float __x);
+      ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:458:41: error: static declaration of 'trunc' follows non-static declaration
+static av_always_inline av_const double trunc(double x)
+                                        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:263:8: note: previous declaration is here
+double trunc(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/flacdsp.h:23:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:465:40: error: static declaration of 'truncf' follows non-static declaration
+static av_always_inline av_const float truncf(float x)
+                                       ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:264:7: note: previous declaration is here
+float truncf(float __x);
+      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/flacdsp_init_arm.c:31:9: error: use of undeclared identifier 'CONFIG_FLAC_DECODER'
+    if (CONFIG_FLAC_DECODER)
+        ^
+2 warnings and 13 errors generated.
+[7/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/blockdsp_init_neon.c.o
+[8/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\h264pred_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/h264pred_init_arm.c:93:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:195:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[9/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\fmtconvert_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c:44:9: error: use of undeclared identifier 'HAVE_VFP'
+    if (have_vfp_vm(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:36:6: note: expanded from macro 'have_vfp_vm'
+    (HAVE_VFP && ((flags) & AV_CPU_FLAG_VFP_VM))
+     ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/fmtconvert_init_arm.c:49:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:195:1: note: expanded from here
+HAVE_NEON
+^
+2 errors generated.
+[10/2854] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\hevcdsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/hevcdsp_init_arm.c:32:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:289:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+ninja: build stopped: subcommand failed.

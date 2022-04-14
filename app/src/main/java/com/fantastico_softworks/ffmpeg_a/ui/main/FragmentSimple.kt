@@ -1,44 +1,43 @@
 package com.fantastico_softworks.ffmpeg_a.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.fantastico_softworks.ffmpeg_a.R
+import com.fantastico_softworks.ffmpeg_a.MainActivity
 import com.fantastico_softworks.ffmpeg_a.databinding.FragmentSimpleBinding
-
 
 class FragmentSimple : Fragment() {
   
   external fun hello(): String
   val mess: String = "hey world"
   var notifid: Int = 0
+  var preset: Int = 0
   
   companion object {
     fun newInstance() = FragmentSimple()
-    init {
-      System.loadLibrary("hello")
-    }
   }
   
-  private lateinit var viewModel: MainViewModel
+  lateinit var viewModel: MainViewModel
+  lateinit var mainActivity: MainActivity
   
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
     val binding = FragmentSimpleBinding.inflate(inflater, container, false)
-    binding.mainButton.setOnClickListener { sendMess(binding.root) }
+    binding.viewmodel = viewModel
+    binding.inputButton.setOnClickListener { mainActivity.grabSingleFile.launch(arrayOf("video/*")) }
+    //binding.outputButton.setOnClickListener { mainActivity.makeSingleFile.launch("${viewModel.inFileName.get()}.${viewModel.outFileType}") }
+    binding.mainButton.setOnClickListener { Log.d("user", "transcoding")
+      MainViewModel.probe(viewModel, mainActivity.applicationContext) }
     return binding.root
   }
   
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     // TODO: Use the ViewModel
   }
   
@@ -46,6 +45,8 @@ class FragmentSimple : Fragment() {
     super.onCreate(savedInstanceState)
   }
   
+  /*
+  Keeping here until I need the notification code again.
   fun sendMess(view: View) {
     val builder = NotificationCompat.Builder(view.context, "MAIN")
       .setSmallIcon(R.drawable.ic_notif_dark)
@@ -56,4 +57,5 @@ class FragmentSimple : Fragment() {
       notifid = notifid.inc()
     }
   }
+  */
 }

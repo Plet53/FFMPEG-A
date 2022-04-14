@@ -1,9 +1,16 @@
 # ninja log v5
-0	66	666332352	CMakeFiles/hello.dir/hello.c.o	7a52f7f68914f22e
-66	310	666332352	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86_64/libhello.so	3cb6511882fd1cab
-0	6	0	clean	5fd7d217ec38e6e9
-0	76	666334031	CMakeFiles/hello.dir/hello.c.o	7a52f7f68914f22e
-76	321	666334031	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86_64/libhello.so	3cb6511882fd1cab
-0	6	0	clean	5fd7d217ec38e6e9
-1	266	666334192	CMakeFiles/hello.dir/hello.c.o	7a52f7f68914f22e
-266	356	666334192	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86_64/libhello.so	3cb6511882fd1cab
+23	157	667966791	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/atomics/pthread/stdatomic.c.o	a441d42ba416c5de
+33	160	667966791	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/djgpp/math.c.o	ddd4ab5ddb8c143c
+35	222	667966791	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/msvcrt/snprintf.c.o	70ef48e34ef7f74c
+16	229	667966791	CMakeFiles/hello.dir/hello.cpp.o	193691a50dc7cc3c
+34	230	667966791	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/getopt.c.o	8893c00c0001a0ee
+36	365	667966791	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/strtod.c.o	1b92884f6fa34514
+37	430	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/avio_list_dir.c.o	2e9554607b663e2f
+40	492	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/decode_audio.c.o	8b3e32441c7a8de4
+229	500	667966792	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86_64/libhello.so	19aeb4f9a3f9526b
+158	509	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/decode_video.c.o	c7ea59c5b9c02a5c
+38	537	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/avio_reading.c.o	4481e0ac83141d8
+230	549	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/encode_video.c.o	3fe6e3e47be159be
+160	566	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/demuxing_decoding.c.o	83cb9df002792057
+222	590	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/encode_audio.c.o	208a440b1d20b248
+366	595	667966792	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/extract_mvs.c.o	5621ffe2e2fffa5b

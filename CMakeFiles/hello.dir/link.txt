@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -shared -Wl,--enable-auto-import -o msys-hello.dll -Wl,--out-implib,libhello.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CMakeFiles/hello.dir/src/main/cpp/hello.cpp.o 

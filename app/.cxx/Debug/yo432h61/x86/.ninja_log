@@ -1,9 +1,15 @@
 # ninja log v5
-1	67	666332351	CMakeFiles/hello.dir/hello.c.o	55dc94af9e6f16
-67	291	666332351	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86/libhello.so	5285e0956e958941
-0	4	0	clean	5fd7d217ec38e6e9
-1	71	666334031	CMakeFiles/hello.dir/hello.c.o	55dc94af9e6f16
-72	153	666334031	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86/libhello.so	5285e0956e958941
-0	5	0	clean	5fd7d217ec38e6e9
-0	81	666334192	CMakeFiles/hello.dir/hello.c.o	55dc94af9e6f16
-82	465	666334192	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86/libhello.so	5285e0956e958941
+46	384	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/getopt.c.o	69a8e9023579a64f
+24	406	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/atomics/pthread/stdatomic.c.o	d6ddb715edcf3b76
+16	417	667966786	CMakeFiles/hello.dir/hello.cpp.o	52706ed3fa0954f7
+417	699	667966786	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/yo432h61/obj/x86/libhello.so	fca1e3a00fd1edff
+54	715	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/decode_audio.c.o	51ea5e3475e909d0
+50	731	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/avio_list_dir.c.o	a02239eb7f832029
+48	772	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/msvcrt/snprintf.c.o	2da65eddcd7d2887
+49	989	667966786	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/strtod.c.o	858e67f1027366ce
+384	1105	667966787	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/decode_video.c.o	e03055966d52597e
+43	1118	667966787	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/compat/djgpp/math.c.o	3ec6bf14a336c2b8
+52	1118	667966787	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/avio_reading.c.o	ec30e9efe6a389f5
+699	1166	667966787	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/encode_audio.c.o	172510bc97dd3a2e
+406	1216	667966787	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/doc/examples/demuxing_decoding.c.o	257d71ccb4865d47
+19	400	667966824	CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/blockdsp_init_neon.c.o	14f4887c8d937bf7

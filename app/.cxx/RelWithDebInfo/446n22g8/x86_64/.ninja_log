@@ -1,0 +1,10 @@
+# ninja log v5
+10	119	669188127	CMakeFiles/hello.dir/main/cpp/hello.cpp.o	8229acc69caad350
+120	200	669188127	D:/FFMPEG-A/app/build/intermediates/cxx/RelWithDebInfo/446n22g8/obj/x86_64/libhello.so	8895ac7ce23f2bc4
+0	280	669188127	CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o	e03e9e54e5c336b4
+1	95	669250051	build.ninja	f1e23bdc8223c3ec
+0	6	0	clean	5fd7d217ec38e6e9
+1	82	669268411	build.ninja	f1e23bdc8223c3ec
+9	134	669268411	CMakeFiles/hello.dir/main/cpp/hello.cpp.o	8229acc69caad350
+134	228	669268411	D:/FFMPEG-A/app/build/intermediates/cxx/RelWithDebInfo/446n22g8/obj/x86_64/libhello.so	8895ac7ce23f2bc4
+3	318	669268411	CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o	e03e9e54e5c336b4

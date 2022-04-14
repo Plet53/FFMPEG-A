@@ -1,0 +1,5 @@
+ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\6q2q355x\x86_64'
+[1/4] Building CXX object CMakeFiles/hello.dir/src/main/cpp/hello.cpp.o
+[2/4] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\Debug\6q2q355x\obj\x86_64\libhello.so
+[3/4] Building CXX object CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o
+[4/4] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\Debug\6q2q355x\obj\x86_64\libffmpeginterface.so

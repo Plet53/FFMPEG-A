@@ -1,0 +1,20 @@
+Executable : D:\Android_SDK\cmake\3.18.1\bin\cmake.exe
+arguments : 
+-HD:\FFMPEG-A\app\src
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=D:\Android_NDK
+-DCMAKE_ANDROID_NDK=D:\Android_NDK
+-DCMAKE_TOOLCHAIN_FILE=D:\Android_NDK\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=D:\Android_SDK\cmake\3.18.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\FFMPEG-A\app\build\intermediates\cxx\Debug\3t465g2b\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\FFMPEG-A\app\build\intermediates\cxx\Debug\3t465g2b\obj\x86_64
+-DCMAKE_BUILD_TYPE=Debug
+-BD:\FFMPEG-A\app\.cxx\Debug\3t465g2b\x86_64
+-GNinja
+jvmArgs : 
+

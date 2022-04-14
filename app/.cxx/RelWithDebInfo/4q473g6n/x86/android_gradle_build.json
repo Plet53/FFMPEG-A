@@ -31,8 +31,8 @@
       "cppCompilerExecutable": "D:\\Android_SDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
     }
   },
-  "cFileExtensions": [
-    "c"
-  ],
-  "cppFileExtensions": []
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
 }

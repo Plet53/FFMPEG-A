@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\6d572we1\x86_64'
+[1/1] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\Debug\6d572we1\obj\x86_64\libffmpeginterface.so

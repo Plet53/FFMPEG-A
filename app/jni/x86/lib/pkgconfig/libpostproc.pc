@@ -1,0 +1,14 @@
+prefix=build/x86
+exec_prefix=${prefix}
+libdir=build/x86/lib
+includedir=build/x86/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 56.5.100
+Requires: 
+Requires.private: libavutil >= 57.24.101
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

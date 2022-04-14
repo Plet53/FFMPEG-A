@@ -1,0 +1,663 @@
+ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\yo432h61\x86_64'
+[1/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\lossless_audiodsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/lossless_audiodsp_init_arm.c:35:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:14:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[2/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\mlpdsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c:140:9: error: use of undeclared identifier 'HAVE_ARMV5TE'
+    if (have_armv5te(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:25:29: note: expanded from macro 'have_armv5te'
+#define have_armv5te(flags) CPUEXT(flags, ARMV5TE)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:33:1: note: expanded from here
+HAVE_ARMV5TE
+^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mlpdsp_init_arm.c:144:9: error: use of undeclared identifier 'HAVE_ARMV6'
+    if (have_armv6(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:26:29: note: expanded from macro 'have_armv6'
+#define have_armv6(flags)   CPUEXT(flags, ARMV6)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:35:1: note: expanded from here
+HAVE_ARMV6
+^
+2 errors generated.
+[3/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\rdft_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/rdft_init_arm.c:31:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags))
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:152:1: note: expanded from here
+HAVE_NEON
+^
+1 error generated.
+[4/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\mpegaudiodsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegaudiodsp_init_arm.c:35:9: error: use of undeclared identifier 'HAVE_ARMV6'
+    if (have_armv6(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:26:29: note: expanded from macro 'have_armv6'
+#define have_armv6(flags)   CPUEXT(flags, ARMV6)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:138:1: note: expanded from here
+HAVE_ARMV6
+^
+1 error generated.
+[5/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\mpegvideoencdsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideoencdsp_init_arm.c:35:9: error: use of undeclared identifier 'HAVE_ARMV6'
+    if (have_armv6(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:26:29: note: expanded from macro 'have_armv6'
+#define have_armv6(flags)   CPUEXT(flags, ARMV6)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:138:1: note: expanded from here
+HAVE_ARMV6
+^
+1 error generated.
+[6/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\pixblockdsp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:25:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:45: error: expected ')'
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:23: note: to match this '('
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:55: error: expected ')'
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:33: note: to match this '('
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:46: error: expected ')'
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                                             ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:24: note: to match this '('
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:56: error: expected ')'
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:34: note: to match this '('
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                 ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:47:9: error: use of undeclared identifier 'HAVE_ARMV6'
+    if (have_armv6(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:26:29: note: expanded from macro 'have_armv6'
+#define have_armv6(flags)   CPUEXT(flags, ARMV6)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:138:1: note: expanded from here
+HAVE_ARMV6
+^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:49:27: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+            c->get_pixels = ff_get_pixels_armv6;
+                          ^ ~~~~~~~~~~~~~~~~~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:50:24: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+        c->diff_pixels = ff_diff_pixels_armv6;
+                       ^ ~~~~~~~~~~~~~~~~~~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:53:9: error: use of undeclared identifier 'HAVE_NEON'
+    if (have_neon(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:30:29: note: expanded from macro 'have_neon'
+#define have_neon(flags)    CPUEXT(flags, NEON)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:140:1: note: expanded from here
+HAVE_NEON
+^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:55:37: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+            c->get_pixels_unaligned = ff_get_pixels_unaligned_neon;
+                                    ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:56:27: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+            c->get_pixels = ff_get_pixels_neon;
+                          ^ ~~~~~~~~~~~~~~~~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:58:34: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+        c->diff_pixels_unaligned = ff_diff_pixels_unaligned_neon;
+                                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/pixblockdsp_init_arm.c:59:24: warning: incompatible pointer types assigning to 'void (*)(int16_t *)' (aka 'void (*)(short *)') from 'void (int16_t *, const uint8_t *, const uint8_t *, ptrdiff_t)' (aka 'void (short *, const unsigned char *, const unsigned char *, long)') [-Wincompatible-pointer-types]
+        c->diff_pixels = ff_diff_pixels_neon;
+                       ^ ~~~~~~~~~~~~~~~~~~~
+6 warnings and 6 errors generated.
+[7/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/neontest.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/neontest.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/neontest.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\neontest.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/neontest.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:29:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_open2, avctx, codec, options);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:29:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_open2, avctx, codec, options);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:37:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_decode_subtitle2, avctx, sub,
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:37:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_decode_subtitle2, avctx, sub,
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:45:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_encode_subtitle, avctx, buf, buf_size, sub);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:45:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_encode_subtitle, avctx, buf, buf_size, sub);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:50:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_send_packet, avctx, avpkt);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:50:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_send_packet, avctx, avpkt);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:55:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_receive_packet, avctx, avpkt);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:55:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_receive_packet, avctx, avpkt);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:60:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_send_frame, avctx, frame);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:60:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_send_frame, avctx, frame);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:65:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_receive_frame, avctx, frame);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:42:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[0]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rax, d8-d15
+        ^~~~
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/neontest.c:65:5: error: invalid instruction mnemonic 'vstm'
+    testneonclobbers(avcodec_receive_frame, avctx, frame);
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:44:5: note: expanded from macro 'testneonclobbers'
+    storeneonregs(neon[1]);                                     \
+    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/neontest.h:36:9: note: expanded from macro 'storeneonregs'
+        "vstm %0, {d8-d15}\n\t"           \
+        ^
+<inline asm>:1:2: note: instantiated into assembly here
+        vstm %rcx, d8-d15
+        ^~~~
+14 errors generated.
+[8/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\mpegvideo_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:54:32: error: static declaration of 'cbrt' follows non-static declaration
+static av_always_inline double cbrt(double x)
+                               ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:191:8: note: previous declaration is here
+double cbrt(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:61:31: error: static declaration of 'cbrtf' follows non-static declaration
+static av_always_inline float cbrtf(float x)
+                              ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:192:7: note: previous declaration is here
+float cbrtf(float __x);
+      ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:68:32: error: static declaration of 'copysign' follows non-static declaration
+static av_always_inline double copysign(double x, double y)
+                               ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:279:8: note: previous declaration is here
+double copysign(double __value, double __sign) __attribute_const__;
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:121:22: error: static declaration of 'erf' follows non-static declaration
+static inline double erf(double z)
+                     ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:211:8: note: previous declaration is here
+double erf(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:340:9: warning: 'isnan' macro redefined [-Wmacro-redefined]
+#define isnan(x)                  \
+        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:69:9: note: previous definition is here
+#define isnan(x) __builtin_isnan(x)
+        ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:359:9: warning: 'isfinite' macro redefined [-Wmacro-redefined]
+#define isfinite(x)                  \
+        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:65:9: note: previous definition is here
+#define isfinite(x) __builtin_isfinite(x)
+        ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:366:31: error: static declaration of 'hypot' follows non-static declaration
+static inline av_const double hypot(double x, double y)
+                              ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:199:8: note: previous declaration is here
+double hypot(double __x, double __y);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:423:22: error: static declaration of 'rint' follows non-static declaration
+static inline double rint(double x)
+                     ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:239:8: note: previous declaration is here
+double rint(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:430:43: error: static declaration of 'lrint' follows non-static declaration
+static av_always_inline av_const long int lrint(double x)
+                                          ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:243:6: note: previous declaration is here
+long lrint(double __x);
+     ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:437:43: error: static declaration of 'lrintf' follows non-static declaration
+static av_always_inline av_const long int lrintf(float x)
+                                          ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:244:6: note: previous declaration is here
+long lrintf(float __x);
+     ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:444:41: error: static declaration of 'round' follows non-static declaration
+static av_always_inline av_const double round(double x)
+                                        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:251:8: note: previous declaration is here
+double round(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:451:40: error: static declaration of 'roundf' follows non-static declaration
+static av_always_inline av_const float roundf(float x)
+                                       ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:252:7: note: previous declaration is here
+float roundf(float __x);
+      ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:458:41: error: static declaration of 'trunc' follows non-static declaration
+static av_always_inline av_const double trunc(double x)
+                                        ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:263:8: note: previous declaration is here
+double trunc(double __x);
+       ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:22:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/internal.h:107:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/libm.h:465:40: error: static declaration of 'truncf' follows non-static declaration
+static av_always_inline av_const float truncf(float x)
+                                       ^
+D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\math.h:264:7: note: previous declaration is here
+float truncf(float __x);
+      ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:25:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:41:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:56:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:55:31: note: to match this '('
+    void (*put_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:59:60: error: expected ')'
+                                      uint8_t *av_restrict pixels /* align 8 */,
+                                                           ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:58:38: note: to match this '('
+    void (*put_signed_pixels_clamped)(const int16_t *block /* align 16 */,
+                                     ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:62:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:61:31: note: to match this '('
+    void (*add_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:73: error: expected ')'
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:29: note: to match this '('
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:73: error: expected ')'
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:29: note: to match this '('
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_arm.c:25:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:49:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:45: error: expected ')'
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:23: note: to match this '('
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:55: error: expected ')'
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:33: note: to match this '('
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.
+[9/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\mpegvideo_armv5te.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c:25:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:41:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:56:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:55:31: note: to match this '('
+    void (*put_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:59:60: error: expected ')'
+                                      uint8_t *av_restrict pixels /* align 8 */,
+                                                           ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:58:38: note: to match this '('
+    void (*put_signed_pixels_clamped)(const int16_t *block /* align 16 */,
+                                     ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:62:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:61:31: note: to match this '('
+    void (*add_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:73: error: expected ')'
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:29: note: to match this '('
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:73: error: expected ')'
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:29: note: to match this '('
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/mpegvideo_armv5te.c:25:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:49:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:45: error: expected ')'
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:23: note: to match this '('
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:55: error: expected ')'
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:33: note: to match this '('
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:46: error: expected ')'
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                                             ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:24: note: to match this '('
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:56: error: expected ')'
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:34: note: to match this '('
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                 ^
+9 errors generated.
+[10/2852] Building C object CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c.o
+FAILED: CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c.o 
+D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeg_5_0_EXPORTS -ID:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0 -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c.o -MF CMakeFiles\ffmpeg-5.0.dir\ffmpeg-5.0\libavcodec\arm\me_cmp_init_arm.c.o.d -o CMakeFiles/ffmpeg-5.0.dir/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c:26:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:41:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:56:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:55:31: note: to match this '('
+    void (*put_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:59:60: error: expected ')'
+                                      uint8_t *av_restrict pixels /* align 8 */,
+                                                           ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:58:38: note: to match this '('
+    void (*put_signed_pixels_clamped)(const int16_t *block /* align 16 */,
+                                     ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:62:53: error: expected ')'
+                               uint8_t *av_restrict pixels /* align 8 */,
+                                                    ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:61:31: note: to match this '('
+    void (*add_pixels_clamped)(const int16_t *block /* align 16 */,
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:73: error: expected ')'
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:102:29: note: to match this '('
+void ff_put_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:73: error: expected ')'
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                                                                        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/idctdsp.h:104:29: note: to match this '('
+void ff_add_pixels_clamped_c(const int16_t *block, uint8_t *av_restrict pixels,
+                            ^
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c:26:
+In file included from D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/mpegvideo.h:49:
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:45: error: expected ')'
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:29:23: note: to match this '('
+    void (*get_pixels)(int16_t *av_restrict block /* align 16 */,
+                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:55: error: expected ')'
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                      ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:32:33: note: to match this '('
+    void (*get_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:46: error: expected ')'
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                                             ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:35:24: note: to match this '('
+    void (*diff_pixels)(int16_t *av_restrict block /* align 16 */,
+                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:56: error: expected ')'
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                                       ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavcodec/pixblockdsp.h:39:34: note: to match this '('
+    void (*diff_pixels_unaligned)(int16_t *av_restrict block /* align 16 */,
+                                 ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0/libavcodec/arm/me_cmp_init_arm.c:45:9: error: use of undeclared identifier 'HAVE_ARMV6'
+    if (have_armv6(cpu_flags)) {
+        ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/arm/cpu.h:26:29: note: expanded from macro 'have_armv6'
+#define have_armv6(flags)   CPUEXT(flags, ARMV6)
+                            ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:40:31: note: expanded from macro 'CPUEXT'
+#define CPUEXT(flags, cpuext) CPUEXT_SUFFIX(flags, , cpuext)
+                              ^
+D:/FFMPEG-A/app/src/main/cpp/ffmpeg-5.0\libavutil/cpu_internal.h:27:6: note: expanded from macro 'CPUEXT_SUFFIX'
+    (HAVE_ ## cpuext ## suffix && ((flags) & AV_CPU_FLAG_ ## cpuext))
+     ^
+<scratch space>:299:1: note: expanded from here
+HAVE_ARMV6
+^
+10 errors generated.
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,4 @@
+/d/ffmpeg-a/CMakeFiles/hello.dir
+/d/ffmpeg-a/CMakeFiles/ffmpeginterface.dir
+/d/ffmpeg-a/CMakeFiles/edit_cache.dir
+/d/ffmpeg-a/CMakeFiles/rebuild_cache.dir

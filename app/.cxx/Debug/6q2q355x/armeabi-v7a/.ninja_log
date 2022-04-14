@@ -1,0 +1,5 @@
+# ninja log v5
+9	227	671680054	CMakeFiles/hello.dir/src/main/cpp/hello.cpp.o	37452721f47467f9
+227	331	671680054	../../../../build/intermediates/cxx/Debug/6q2q355x/obj/armeabi-v7a/libhello.so	f5d0ff5501ca5044
+0	411	671680055	CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o	a5ba2ae1c6626783
+412	506	671680055	../../../../build/intermediates/cxx/Debug/6q2q355x/obj/armeabi-v7a/libffmpeginterface.so	c5643dee6e9c8f37

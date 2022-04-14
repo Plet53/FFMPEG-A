@@ -1,0 +1,4 @@
+# ninja log v5
+10	134	669779568	CMakeFiles/hello.dir/src/main/cpp/hello.cpp.o	e7424d10ed02c7ca
+134	214	669779568	../../../../build/intermediates/cxx/Debug/14c366s2/obj/x86/libhello.so	679f229ffb2531a9
+0	284	669779568	CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o	f99070c636adc808

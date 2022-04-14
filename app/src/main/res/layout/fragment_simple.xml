@@ -4,7 +4,8 @@
   xmlns:tools="http://schemas.android.com/tools">
   
   <data>
-  
+    <import type="com.fantastico_softworks.ffmpeg_a.ui.main.MainViewModel" />
+    <variable type="MainViewModel" name="viewmodel" />
   </data>
   
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,7 +13,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fantastico_softworks.ffmpeg_a.ui.main.FragmentSimple">
-    
+  
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/transcode_mode"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="192dp"
+      android:layout_marginEnd="20dp"
+      android:background="?attr/colorPrimary"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  
+    <TextView
+      android:id="@+id/mode_description"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="143dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/transcode_mode" />
+  
+    <TextView
+      android:id="@+id/input_file_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="76dp"
+      android:layout_marginTop="300dp"
+      android:text="@{viewmodel.inFileName}"
+      app:layout_constraintBottom_toTopOf="@+id/output_file_name"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/transcode_mode" />
+  
+    <TextView
+      android:id="@+id/output_file_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="76dp"
+      android:text="@{viewmodel.outFileName}"
+      app:layout_constraintBottom_toTopOf="@+id/main_button"
+      app:layout_constraintStart_toStartOf="parent" />
+  
     <Button
       android:id="@+id/main_button"
       android:layout_width="wrap_content"
@@ -23,5 +68,38 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
   
+    <ImageButton
+      android:id="@+id/input_button"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginStart="156dp"
+      android:contentDescription="@string/input_read"
+      android:scaleX=".25"
+      android:scaleY=".25"
+      app:layout_constraintBottom_toBottomOf="@+id/input_file_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/input_file_name"
+      app:layout_constraintTop_toTopOf="@+id/input_file_name"
+      app:layout_constraintVertical_bias="0.5"
+      app:srcCompat="@drawable/folder_white"
+      tools:ignore="TouchTargetSizeCheck" />
+  
+    <ImageButton
+      android:id="@+id/output_button"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:contentDescription="@string/output_read"
+      android:scaleX=".25"
+      android:scaleY=".25"
+      app:layout_constraintBottom_toBottomOf="@+id/output_file_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/output_file_name"
+      app:layout_constraintTop_toTopOf="@+id/output_file_name"
+      app:layout_constraintVertical_bias="0.5"
+      app:srcCompat="@drawable/folder_white"
+      tools:ignore="TouchTargetSizeCheck" />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
