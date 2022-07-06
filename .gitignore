@@ -67,7 +67,7 @@ fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
 
-app/jni/
-app/.cxx/
+app/jni
+app/.cxx
 ffmpeg-5ss/
 bfg-1.14.0.jar

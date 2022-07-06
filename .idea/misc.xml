@@ -5,12 +5,16 @@
       <map>
         <entry key="..\:/FFMPEG-A/app/src/main/res/drawable/ic_launcher_background.xml" value="0.206" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/FFMPEG-A/app/src/main/res/layout/context_menu.xml" value="0.2682291666666667" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_advanced.xml" value="0.2765625" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_expert.xml" value="0.2765625" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_main.xml" value="0.21240942028985507" />
-        <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_simple.xml" value="0.25" />
+        <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_presetmenu.xml" value="0.2682291666666667" />
+        <entry key="..\:/FFMPEG-A/app/src/main/res/layout/fragment_simple.xml" value="0.3818040435458787" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/main_activity.xml" value="0.26875" />
         <entry key="..\:/FFMPEG-A/app/src/main/res/layout/main_fragment.xml" value="0.26875" />
+        <entry key="..\:/FFMPEG-A/app/src/main/res/layout/presetmenu.xml" value="0.3802083333333333" />
+        <entry key="..\:/FFMPEG-A/app/src/main/res/menu/preset_menu.xml" value="0.2890625" />
       </map>
     </option>
   </component>

@@ -4,8 +4,12 @@
   xmlns:tools="http://schemas.android.com/tools">
   
   <data>
+  
     <import type="com.fantastico_softworks.ffmpeg_a.ui.main.MainViewModel" />
-    <variable type="MainViewModel" name="viewmodel" />
+  
+    <variable
+      name="viewmodel"
+      type="MainViewModel" />
   </data>
   
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,44 +23,54 @@
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="20dp"
-      android:layout_marginTop="192dp"
+      android:layout_marginTop="32dp"
       android:layout_marginEnd="20dp"
       android:background="?attr/colorPrimary"
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarTheme"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
   
+    <ImageButton
+      android:id="@+id/dropDown"
+      android:layout_width="63dp"
+      android:layout_height="54dp"
+      android:contentDescription="@string/preset_select"
+      app:layout_constraintBottom_toBottomOf="@+id/transcode_mode"
+      app:layout_constraintEnd_toEndOf="@+id/transcode_mode"
+      app:layout_constraintTop_toTopOf="@+id/transcode_mode"
+      app:srcCompat="@android:drawable/arrow_down_float" />
+  
+    <TextView
+      android:id="@+id/mode_name"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="25dp"
+      android:text="@string/mode_name0"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintBottom_toBottomOf="@+id/transcode_mode"
+      app:layout_constraintEnd_toStartOf="@+id/dropDown"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/transcode_mode"
+      app:layout_constraintTop_toTopOf="@+id/transcode_mode"
+      app:layout_constraintVertical_bias="0.5" />
+  
     <TextView
       android:id="@+id/mode_description"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="143dp"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="20dp"
+      android:text="@string/mode_desc0"
+      app:layout_constraintBottom_toTopOf="@+id/audswitch"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/transcode_mode" />
-  
-    <TextView
-      android:id="@+id/input_file_name"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="76dp"
-      android:layout_marginTop="300dp"
-      android:text="@{viewmodel.inFileName}"
-      app:layout_constraintBottom_toTopOf="@+id/output_file_name"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/transcode_mode" />
-  
-    <TextView
-      android:id="@+id/output_file_name"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="76dp"
-      android:text="@{viewmodel.outFileName}"
-      app:layout_constraintBottom_toTopOf="@+id/main_button"
-      app:layout_constraintStart_toStartOf="parent" />
   
     <Button
       android:id="@+id/main_button"
@@ -81,9 +95,41 @@
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toEndOf="@+id/input_file_name"
       app:layout_constraintTop_toTopOf="@+id/input_file_name"
-      app:layout_constraintVertical_bias="0.5"
+      app:layout_constraintVertical_bias="0.495"
       app:srcCompat="@drawable/folder_white"
       tools:ignore="TouchTargetSizeCheck" />
+  
+    <TextView
+      android:id="@+id/input_file_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="76dp"
+      android:layout_marginTop="300dp"
+      android:text="@{viewmodel.inFileName}"
+      app:layout_constraintBottom_toTopOf="@+id/output_file_name"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/transcode_mode"
+      app:layout_constraintVertical_bias="0.383" />
+  
+    <TextView
+      android:id="@+id/output_file_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="76dp"
+      android:layout_marginBottom="40dp"
+      android:text="@{viewmodel.outFileName}"
+      app:layout_constraintBottom_toTopOf="@+id/main_button"
+      app:layout_constraintStart_toStartOf="parent" />
+  
+    <com.google.android.material.switchmaterial.SwitchMaterial
+      android:id="@+id/audswitch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="28dp"
+      android:layout_marginBottom="4dp"
+      android:text="@string/mute_desc"
+      app:layout_constraintBottom_toTopOf="@+id/input_button"
+      app:layout_constraintEnd_toEndOf="parent" />
   
     <ImageButton
       android:id="@+id/output_button"
@@ -97,7 +143,7 @@
       app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toEndOf="@+id/output_file_name"
       app:layout_constraintTop_toTopOf="@+id/output_file_name"
-      app:layout_constraintVertical_bias="0.5"
+      app:layout_constraintVertical_bias="0.513"
       app:srcCompat="@drawable/folder_white"
       tools:ignore="TouchTargetSizeCheck" />
 

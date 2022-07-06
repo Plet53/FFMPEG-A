@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  
+  <item
+    android:id="@+id/preset0"
+    android:title="@string/mode_name0"
+    android:numericShortcut="1" />
+  
+  <item
+    android:id="@+id/preset1"
+    android:title="@string/mode_name1"
+    android:numericShortcut="2" />
+  
+  <item
+    android:id="@+id/preset2"
+    android:title="@string/mode_name2"
+    android:numericShortcut="3" />
+  
+  <item
+    android:id="@+id/preset3"
+    android:title="@string/mode_name3"
+    android:numericShortcut="4" />
+  
+  <item
+    android:id="@+id/preset4"
+    android:title="@string/mode_name4"
+    android:numericShortcut="5" />
+
+</menu>

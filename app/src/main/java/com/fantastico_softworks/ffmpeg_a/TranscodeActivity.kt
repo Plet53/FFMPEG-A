@@ -6,6 +6,9 @@ import java.io.OutputStream
 
 class TranscodeActivity : AppCompatActivity() {
   
+  external fun probeVid(IOStream: InputStream): VidMeta
+  external fun transcode(InputStream: InputStream, OutputStream: OutputStream, type: Int, width: Int, height: Int, bitrate: Int, audio: Boolean): Boolean
+  
   companion object {
     fun newInstance() = TranscodeActivity()
     init {
@@ -13,9 +16,7 @@ class TranscodeActivity : AppCompatActivity() {
       nativeInit()
     }
     
-    external fun nativeInit()
-    external fun probeVid(IOStream: InputStream): VidMeta
-    external fun transcode(InputStream: InputStream, OutputStream: OutputStream, Type: Int, Bitrate: Int, Height: Int, Width: Int)
+    private external fun nativeInit()
     
   }
   

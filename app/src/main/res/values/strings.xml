@@ -3,6 +3,7 @@
   <string name="tab_text_1">Simple</string>
   <string name="tab_text_2">Advanced</string>
   <string name="tab_text_3">Expert</string>
+  <string name="tab_text_4">...</string>
   <string name="main_button">Transcode</string>
   <string name="channel_name">main</string>
   <string name="channel_description">The main channel for notifications</string>
@@ -10,6 +11,7 @@
   <string name="settings_read">Settings menu.</string>
   <string name="input_read">Press to select input file.</string>
   <string name="output_read">Press to specify output location.</string>
+  <string name="preset_select">Press to select preset.</string>
   <string name="mode_name0">Discord</string>
   <string name="mode_name1">Twitter</string>
   <string name="mode_name2">WEBM</string>
@@ -20,5 +22,6 @@
   <string name="mode_desc2">Convert to WEBM without compression.</string>
   <string name="mode_desc3">Convert to AVI without compression.</string>
   <string name="mode_desc4">Convert to MP4 without compression.</string>
+  <string name="mute_desc">Strip Audio</string>
   <string name="openvid">Select a Video File.</string>
 </resources>

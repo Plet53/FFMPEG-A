@@ -22,15 +22,13 @@ class MainActivity : AppCompatActivity() {
     Log.d("user", uri.toString())
     if (uri != null) {
       viewmodel.inFileURI = uri
-      
       val cursor = contentResolver.query(
         uri, null, null, null, null, null)
       cursor?.use {
         if (it.moveToFirst()) {
           viewmodel.inFileName.set(it.getString(it.getColumnIndex(OpenableColumns.DISPLAY_NAME)))
           viewmodel.inFileSize = it.getInt(it.getColumnIndex(OpenableColumns.SIZE))
-          Log.d("MA", viewmodel.inFileName.get()!!)
-          Log.d("MA", viewmodel.inFileSize.toString())
+          viewmodel.probe(applicationContext)
         }
       }
     }
@@ -40,13 +38,7 @@ class MainActivity : AppCompatActivity() {
   val makeSingleFile = registerForActivityResult(SaveVideo()) { uri: Uri? ->
     if (uri != null) {
       viewmodel.outFileURI = uri
-      
-      val cursor = contentResolver.query(
-        uri, null, null, null, null, null)
-      cursor?.use {
-        viewmodel.outFileName.set(it.getString(it.getColumnIndex(OpenableColumns.DISPLAY_NAME)))
-        Log.d("MA", viewmodel.outFileName.get()!!) }
-      
+      viewmodel.outFileName.set("${viewmodel.inFileName.get()?.substringBeforeLast(".") ?: "video"}.${viewmodel.outFileType}")
     }
   }
   
