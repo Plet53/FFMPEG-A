@@ -1,6 +1,0 @@
-ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\6q2q355x\x86_64'
-[0/1] Re-running CMake...
--- Configuring done
--- Generating done
--- Build files have been written to: D:/FFMPEG-A/app/.cxx/Debug/6q2q355x/x86_64
-[1/1] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\Debug\6q2q355x\obj\x86_64\libffmpeginterface.so

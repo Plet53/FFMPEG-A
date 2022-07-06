@@ -1,6 +1,0 @@
-# ninja log v5
-1	72	666056335	CMakeFiles/hello.dir/hello.c.o	55dc94af9e6f16
-72	280	666056335	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/663k4xg2/obj/x86/libhello.so	ca508e31e25a3822
-0	6	0	clean	5fd7d217ec38e6e9
-1	136	666325195	CMakeFiles/hello.dir/hello.c.o	55dc94af9e6f16
-136	947	666325196	D:/FFMPEG-A/app/build/intermediates/cxx/Debug/663k4xg2/obj/x86/libhello.so	ca508e31e25a3822

@@ -1,4 +1,0 @@
-D:/FFMPEG-A/app/.cxx/Debug/6q2q355x/arm64-v8a/CMakeFiles/ffmpeginterface.dir
-D:/FFMPEG-A/app/.cxx/Debug/6q2q355x/arm64-v8a/CMakeFiles/hello.dir
-D:/FFMPEG-A/app/.cxx/Debug/6q2q355x/arm64-v8a/CMakeFiles/edit_cache.dir
-D:/FFMPEG-A/app/.cxx/Debug/6q2q355x/arm64-v8a/CMakeFiles/rebuild_cache.dir

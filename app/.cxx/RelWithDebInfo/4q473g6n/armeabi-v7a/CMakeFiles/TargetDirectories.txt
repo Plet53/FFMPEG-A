@@ -1,3 +1,0 @@
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/4q473g6n/armeabi-v7a/CMakeFiles/hello.dir
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/4q473g6n/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/4q473g6n/armeabi-v7a/CMakeFiles/rebuild_cache.dir
