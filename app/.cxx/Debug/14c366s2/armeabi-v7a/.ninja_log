@@ -1,4 +1,0 @@
-# ninja log v5
-12	131	669779568	CMakeFiles/hello.dir/src/main/cpp/hello.cpp.o	d1666c01d0cbe4a1
-132	525	669779568	../../../../build/intermediates/cxx/Debug/14c366s2/obj/armeabi-v7a/libhello.so	a410cc4044499fb1
-1	581	669779568	CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o	6d8d73b10b5aadf8

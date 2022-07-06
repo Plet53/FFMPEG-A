@@ -1,7 +1,0 @@
-Executable : D:\Android_SDK\cmake\3.18.1\bin\ninja.exe
-arguments : 
--C
-D:\FFMPEG-A\app\.cxx\Debug\663k4xg2\armeabi-v7a
-hello
-jvmArgs : 
-

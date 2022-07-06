@@ -1,8 +1,0 @@
-Executable : D:\Android_SDK\cmake\3.18.1\bin\ninja.exe
-arguments : 
--C
-D:\FFMPEG-A\app\.cxx\Debug\1l65626k\x86
-ffmpeginterface
-hello
-jvmArgs : 
-

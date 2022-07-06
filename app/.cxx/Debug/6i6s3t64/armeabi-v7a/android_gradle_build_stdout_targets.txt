@@ -1,9 +1,0 @@
-ninja: Entering directory `D:\FFMPEG-A\app\.cxx\Debug\6i6s3t64\armeabi-v7a'
-[1/2] Building CXX object CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o
-FAILED: CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o 
-D:\Android_SDK\ndk\21.4.7075529\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dffmpeginterface_EXPORTS -ID:/FFMPEG-A/app/src/main/jniLibs/armeabi-v7a/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o -MF CMakeFiles\ffmpeginterface.dir\main\cpp\ffmpeginterface.cpp.o.d -o CMakeFiles/ffmpeginterface.dir/main/cpp/ffmpeginterface.cpp.o -c D:/FFMPEG-A/app/src/main/cpp/ffmpeginterface.cpp
-D:/FFMPEG-A/app/src/main/cpp/ffmpeginterface.cpp:2:10: fatal error: 'libavutil/dict.h' file not found
-#include "libavutil/dict.h"
-         ^~~~~~~~~~~~~~~~~~
-1 error generated.
-ninja: build stopped: subcommand failed.

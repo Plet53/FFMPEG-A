@@ -1,4 +1,0 @@
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/446n22g8/x86/CMakeFiles/ffmpeginterface.dir
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/446n22g8/x86/CMakeFiles/hello.dir
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/446n22g8/x86/CMakeFiles/edit_cache.dir
-D:/FFMPEG-A/app/.cxx/RelWithDebInfo/446n22g8/x86/CMakeFiles/rebuild_cache.dir
