@@ -60,6 +60,7 @@ android {
         includeInApk true
         includeInBundle true
     }
+    namespace 'com.fantastico_softworks.ffmpeg_a'
 }
 
 dependencies {

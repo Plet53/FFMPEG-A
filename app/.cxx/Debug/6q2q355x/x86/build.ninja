@@ -59,10 +59,10 @@ build CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o: CXX_COM
 #############################################
 # Link the shared library ..\..\..\..\build\intermediates\cxx\Debug\6q2q355x\obj\x86\libffmpeginterface.so
 
-build ../../../../build/intermediates/cxx/Debug/6q2q355x/obj/x86/libffmpeginterface.so: CXX_SHARED_LIBRARY_LINKER__ffmpeginterface_Debug CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o | ../../../../jni/x86/lib/libavformat.so D$:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21/liblog.so ../../../../jni/x86/lib/libavcodec.so ../../../../jni/x86/lib/libavutil.so
+build ../../../../build/intermediates/cxx/Debug/6q2q355x/obj/x86/libffmpeginterface.so: CXX_SHARED_LIBRARY_LINKER__ffmpeginterface_Debug CMakeFiles/ffmpeginterface.dir/src/main/cpp/ffmpeginterface.cpp.o | ../../../../jni/x86/lib/libavdevice.so ../../../../jni/x86/lib/libavfilter.so ../../../../jni/x86/lib/libavformat.so ../../../../jni/x86/lib/libpostproc.so ../../../../jni/x86/lib/libswresample.so ../../../../jni/x86/lib/libswscale.so D$:/Android_SDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21/liblog.so ../../../../jni/x86/lib/libavcodec.so ../../../../jni/x86/lib/libavutil.so
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = ../../../../jni/x86/lib/libavformat.so  -llog  ../../../../jni/x86/lib/libavcodec.so  ../../../../jni/x86/lib/libavutil.so  -latomic -lm
+  LINK_LIBRARIES = ../../../../jni/x86/lib/libavdevice.so  ../../../../jni/x86/lib/libavfilter.so  ../../../../jni/x86/lib/libavformat.so  ../../../../jni/x86/lib/libpostproc.so  ../../../../jni/x86/lib/libswresample.so  ../../../../jni/x86/lib/libswscale.so  -llog  ../../../../jni/x86/lib/libavcodec.so  ../../../../jni/x86/lib/libavutil.so  -latomic -lm
   OBJECT_DIR = CMakeFiles\ffmpeginterface.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

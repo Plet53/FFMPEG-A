@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FFMPEG-A.iml" filepath="$PROJECT_DIR$/.idea/modules/FFMPEG-A.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FFMPEG-A.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ffmpeg5/FFMPEG-A.ffmpeg5.iml" filepath="$PROJECT_DIR$/.idea/modules/ffmpeg5/FFMPEG-A.ffmpeg5.iml" />
     </modules>
   </component>

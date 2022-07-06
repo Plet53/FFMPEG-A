@@ -1,7 +1,6 @@
 package com.fantastico_softworks.ffmpeg_a.ui.main
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,9 +29,8 @@ class FragmentSimple : Fragment() {
     val binding = FragmentSimpleBinding.inflate(inflater, container, false)
     binding.viewmodel = viewModel
     binding.inputButton.setOnClickListener { mainActivity.grabSingleFile.launch(arrayOf("video/*")) }
-    //binding.outputButton.setOnClickListener { mainActivity.makeSingleFile.launch("${viewModel.inFileName.get()}.${viewModel.outFileType}") }
-    binding.mainButton.setOnClickListener { Log.d("user", "transcoding")
-      MainViewModel.probe(viewModel, mainActivity.applicationContext) }
+    binding.outputButton.setOnClickListener { mainActivity.makeSingleFile.launch("${viewModel.inFileName.get()}.${viewModel.outFileType}") }
+    binding.mainButton.setOnClickListener { MainViewModel.probe(viewModel, mainActivity.applicationContext) }
     return binding.root
   }
   

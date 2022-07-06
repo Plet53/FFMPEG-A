@@ -36,8 +36,18 @@ class MainActivity : AppCompatActivity() {
     }
   }
   
+  @SuppressLint("Range")
   val makeSingleFile = registerForActivityResult(SaveVideo()) { uri: Uri? ->
-    Log.d("MA", uri.toString())
+    if (uri != null) {
+      viewmodel.outFileURI = uri
+      
+      val cursor = contentResolver.query(
+        uri, null, null, null, null, null)
+      cursor?.use {
+        viewmodel.outFileName.set(it.getString(it.getColumnIndex(OpenableColumns.DISPLAY_NAME)))
+        Log.d("MA", viewmodel.outFileName.get()!!) }
+      
+    }
   }
   
   lateinit var viewmodel: MainViewModel

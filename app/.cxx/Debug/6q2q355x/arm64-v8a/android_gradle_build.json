@@ -23,7 +23,12 @@
       "artifactName": "ffmpeginterface",
       "output": "D:\\FFMPEG-A\\app\\build\\intermediates\\cxx\\Debug\\6q2q355x\\obj\\arm64-v8a\\libffmpeginterface.so",
       "runtimeFiles": [
+        "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libavdevice.so",
+        "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libavfilter.so",
         "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libavformat.so",
+        "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libpostproc.so",
+        "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libswresample.so",
+        "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libswscale.so",
         "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libavcodec.so",
         "D:\\FFMPEG-A\\app\\jni\\arm64-v8a\\lib\\libavutil.so"
       ]

@@ -91,6 +91,25 @@ target_link_libraries(
         INTERFACE avutil
 )
 
+#AVDevice depends on Util and Formar
+add_library(
+        avdevice
+        SHARED
+        IMPORTED
+)
+
+set_target_properties(
+        avdevice
+        PROPERTIES IMPORTED_LOCATION
+        D:/FFMPEG-A/app/jni/${ANDROID_ABI}/lib/libavdevice.so
+)
+
+target_link_libraries(
+        avdevice
+        INTERFACE avutil
+        INTERFACE avformat
+)
+
 #PostProc depends only on itself
 add_library(
         postproc
@@ -161,12 +180,13 @@ find_library( # Sets the name of the path variable.
 target_link_libraries(
         ffmpeginterface
         avutil
-        #avcodec
-        #avfilter
+        avdevice
+        avcodec
+        avfilter
         avformat
-        #postproc
-        #swresample
-        #swscale
+        postproc
+        swresample
+        swscale
         ${log-lib}
 )
 
