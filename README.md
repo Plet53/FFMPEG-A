@@ -26,7 +26,7 @@
 
  This project was written and created using Android Studio, and thus that is the reccommended IDE for viewing the contents herein.
 ## app/src/main/layout
- Contained herein are XML Layout files for the planned layouts. Main is the container for all fragments that would be implemented in the full release, Simple is fully featured and implemented, the others, not at all. Android wants Constraint Layouts, or, layouts primarily created relationally from other elements within the same layout. This allows for layouts that inflate themselves to fill variable screen areas. The dominant challenge in designing these is the same in all UX design, creating intuitive interfaces that display relevant information cleanly and clearly to the end user. [A detailed screenshot of the main interface is included here]().
+ Contained herein are XML Layout files for the planned layouts. Main is the container for all fragments that would be implemented in the full release, Simple is fully featured and implemented, the others, not at all. Android wants Constraint Layouts, or, layouts primarily created relationally from other elements within the same layout. This allows for layouts that inflate themselves to fill variable screen areas. The dominant challenge in designing these is the same in all UX design, creating intuitive interfaces that display relevant information cleanly and clearly to the end user. [A detailed screenshot of the main interface is included here](https://github.com/Plet53/FFMPEG-A/blob/main/Interface.PNG).
 ## app/src/main/menu
  Contained herein is the single Menu asset I created. It contains 5 options, which map to the 5 available presets. For keyboard users, while the menu is open, Keys 1-5 map to the options.
 ## app/src/main/cpp
