@@ -8,18 +8,18 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.OpenableColumns
-import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
 import com.fantastico_softworks.ffmpeg_a.ui.main.FragmentSimple
 import com.fantastico_softworks.ffmpeg_a.ui.main.MainViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
   
   @SuppressLint("Range")
   val grabSingleFile = registerForActivityResult(ChooseFile()) { uri: Uri? ->
-    Log.d("user", uri.toString())
     if (uri != null) {
       viewmodel.inFileURI = uri
       val cursor = contentResolver.query(
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         if (it.moveToFirst()) {
           viewmodel.inFileName.set(it.getString(it.getColumnIndex(OpenableColumns.DISPLAY_NAME)))
           viewmodel.inFileSize = it.getInt(it.getColumnIndex(OpenableColumns.SIZE))
-          viewmodel.probe(applicationContext)
+          viewmodel.viewModelScope.launch(viewmodel.defDispatch) { viewmodel.probe(applicationContext) }
         }
       }
     }
@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
   val makeSingleFile = registerForActivityResult(SaveVideo()) { uri: Uri? ->
     if (uri != null) {
       viewmodel.outFileURI = uri
+      // Normally I'd ask the mediastore what the new filename actually is, but it's not initialized properly.
       viewmodel.outFileName.set("${viewmodel.inFileName.get()?.substringBeforeLast(".") ?: "video"}.${viewmodel.outFileType}")
     }
   }
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
       fs.mainActivity = this
       fs.viewModel = viewmodel
     }
+    // Notification Channels only exist as of O.
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       val name = getString(R.string.channel_name)
       val importance = NotificationManager.IMPORTANCE_DEFAULT

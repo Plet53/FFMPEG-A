@@ -470,7 +470,7 @@ Java_com_fantastico_1softworks_ffmpeg_1a_TranscodeActivity_transcode
   }
   // Write trailer.
   e = av_write_trailer(outfmt_ctx);
-  if (e < 0) __android_log_print(ANDROID_LOG_ERROR, "avfmt_write", "%s", av_err2str(e));
+  if (e < 0) { __android_log_print(ANDROID_LOG_ERROR, "avfmt_write", "%s", av_err2str(e)); goto finish;}
   // Mark that we have finished the job properly.
   out = JNI_TRUE;
   // GOTO Block for cleanup, keeps function calls off the stack.

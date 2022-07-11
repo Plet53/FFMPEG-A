@@ -6,10 +6,8 @@ import android.net.Uri
 import android.util.Log
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.fantastico_softworks.ffmpeg_a.TranscodeActivity
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import kotlin.math.min
 
 @SuppressLint("StaticFieldLeak")
@@ -39,17 +37,15 @@ class MainViewModel : ViewModel() {
     if (inFileURI != null) {
       val stream = appcontext.contentResolver.openInputStream(inFileURI!!)
       if (stream != null) {
-        viewModelScope.launch(defDispatch) {
         val data = act.probeVid(stream)
-          duration = data.dur
-          invidheight = data.hei
-          outvidheight = data.hei
-          invidwidth = data.wid
-          outvidwidth = data.wid
-          stream.close()
-          // bits/second coming from Bytes in the file / (Duration in seconds * 8 (bits in a byte)
-          vidBitRateAvg = ((inFileSize / ((duration * 8) / AV_TIME_SCALE)).toInt())
-        }
+        duration = data.dur
+        invidheight = data.hei
+        outvidheight = data.hei
+        invidwidth = data.wid
+        outvidwidth = data.wid
+        stream.close()
+        // bits/second coming from Bytes in the file / (Duration in seconds * 8 (bits in a byte)
+        vidBitRateAvg = ((inFileSize / ((duration * 8) / AV_TIME_SCALE)).toInt())
       } else { Log.d("probe", "could not open file") }
     }
     else { Log.d("probe", "no video selected") }
@@ -64,6 +60,7 @@ class MainViewModel : ViewModel() {
           var type = 0
           var bitrate = vidBitRateAvg
           when (preset) {
+            // Compress for Twitter. Be stingy with data as, it's Twitter.
             1 -> {
               type = 1
               bitrate = 2500000
@@ -73,18 +70,24 @@ class MainViewModel : ViewModel() {
                 return
               }
             }
+            // Convert to Webm
             2 -> {}
+            // Convert to AVI
             3 -> {
               type = 2
             }
+            // Convert to MP4
             4 -> {
               type = 1
             }
+            // Compress for Discord. The final file should be 8MB large.
             else -> {
               // Trillions exceed the limits of an Int, which, fair.
               // If input bitrate is already low we don't have to worry too much about compression.
               bitrate = min(((discordMax.toLong() * AV_TIME_SCALE) / duration).toInt(), vidBitRateAvg)
               when (bitrate){
+                /* These bitrate ranges are taken from OBS reccomendations. I couldn't find any specific
+                documentation on how much bitrate a VP8 Webm takes for a second of video. */
                 in 4500000..8000000 -> {
                   smallres(1080)
                 }
@@ -131,6 +134,7 @@ class MainViewModel : ViewModel() {
   fun smallres(res: Int) {
     // smallres only ever acts if we *need* to ensmallen the vid
     if (invidheight > res && invidwidth > res) {
+      // Preserve the orientation of the video
       if (invidheight < invidwidth) {
         outvidheight = res
         outvidwidth = (res * invidwidth) / invidheight

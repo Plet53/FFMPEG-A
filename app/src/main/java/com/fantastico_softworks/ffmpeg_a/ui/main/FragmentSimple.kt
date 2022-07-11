@@ -32,17 +32,24 @@ class FragmentSimple : Fragment() {
   ): View {
     val binding = FragmentSimpleBinding.inflate(inflater, container, false)
     binding.viewmodel = viewModel
+    // Select a File
     binding.inputButton.setOnClickListener { mainActivity.grabSingleFile.launch(arrayOf("video/*")) }
+    // Create a File
     binding.outputButton.setOnClickListener { mainActivity.makeSingleFile.launch(
       "${viewModel.inFileName.get()?.substringBeforeLast(".", "video")}.${viewModel.outFileType}") }
+    // Transcode video from input to output, on the IO threadpool
     binding.mainButton.setOnClickListener { viewModel.viewModelScope.launch(viewModel.defDispatch) {
       viewModel.transcode(mainActivity.applicationContext) }}
+    // Create the preset menu
     val popup = PopupMenu(context, binding.dropDown)
     popup.inflate(R.menu.preset_menu)
+    // Respond to the selection of a preset
     popup.setOnMenuItemClickListener { item ->
+      // Yes my presets are 0 indexed
       preset = item.numericShortcut.digitToInt() - 1
       viewModel.outFileURI = null
       viewModel.outFileName.set("")
+      // R stores the strings one after the other, exactly as I'd hoped, nyehe
       binding.modeName.setText(R.string.mode_name0 + preset)
       binding.modeDescription.setText(R.string.mode_desc0 + preset)
       when (preset) {
@@ -50,8 +57,11 @@ class FragmentSimple : Fragment() {
         1, 4 -> {viewModel.outFileType = "mp4"}
         else -> {viewModel.outFileType = "webm"}
       }
+      // I have to return a value here. But the return keyword is illegal in a lambda. *shrug*
       true }
+    // Show the preset menu
     binding.dropDown.setOnClickListener { popup.show() }
+    // Determine whether we're dealing with audio
     binding.audswitch.setOnCheckedChangeListener { _, isChecked ->
       viewModel.audio = !isChecked }
     return binding.root

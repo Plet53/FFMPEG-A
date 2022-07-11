@@ -64,9 +64,6 @@ android {
         includeInApk true
         includeInBundle true
     }
-    packagingOptions {
-        doNotStrip '../jni/*'
-    }
     namespace 'com.fantastico_softworks.ffmpeg_a'
 }
 
